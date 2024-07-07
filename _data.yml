@@ -1,0 +1,5 @@
+layout: templates/base.vto
+
+metas:
+  title: "=title"
+  site: "DIY FTW"
