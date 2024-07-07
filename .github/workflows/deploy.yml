@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: open-data-toolbox
+          project: diy-open-data
           import-map: "./deno.json"
           entrypoint: serve.ts
