@@ -1,4 +1,4 @@
-# diy-ftw
+# Open Data Toolbox
 Tools and techniques for data
 
 This is a repo containing a catalogur of tools that are useful for data exploration, processing and visualisation.
