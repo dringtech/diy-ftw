@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} - {{ metas.site }}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
   <link rel="stylesheet" href="/components.css">
 </head>
 <body>
+<header>
+{{ metas.site }}
+</header>
 <main>
+<h1>{{ title }}</h1>
 {{ content }}
 </main>
 

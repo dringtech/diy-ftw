@@ -12,4 +12,7 @@ site.use(base_path());
 site.use(esbuild());
 site.use(metas());
 
+site.copy('assets/fonts/webfonts');
+site.copy('assets/css');
+
 export default site;
