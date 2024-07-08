@@ -3,12 +3,12 @@ function init() {
 
   if (!form) return;
 
-  function applyFilter() {
+  function applyFilter(selectedType: string) {
     document.querySelectorAll<HTMLElement>("[data-type]")
       .forEach((s) => {
         const type = s.dataset.type;
         if (!type) return;
-        const selected = form![type].checked;
+        const selected = type === selectedType;
         s.hidden = !selected;
       });
   }
@@ -20,8 +20,8 @@ function init() {
   }
 
   form.addEventListener("change", () => {
-    if (form.querySelectorAll<HTMLInputElement>("input:checked").length > 0) {
-      applyFilter();
+    if (form.type.value !== "") {
+      applyFilter(form.type.value);
     } else {
       clearFilter();
     }
