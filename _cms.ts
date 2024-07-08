@@ -23,6 +23,7 @@ cms.collection("tools", "tools:*.md", [
       "miscellaneous",
       "orchestration",
       "programming-language",
+      "publishing-platform",
       "site-generator",
       "web-app",
       "web-platform",

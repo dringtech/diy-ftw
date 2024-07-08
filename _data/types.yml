@@ -10,3 +10,6 @@ miscellaneous: Miscellaneous
 orchestration: Orchestration
 programming-language: Programming Language
 site-generator: Site Generator
+web-app: Web-hosted Application
+web-platform: Web Framework
+publishing-platform: Publishing Platform
