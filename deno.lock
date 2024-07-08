@@ -43,6 +43,7 @@
       "jsr:@std/yaml@0.224.3": "jsr:@std/yaml@0.224.3",
       "jsr:@std/yaml@^0.224.1": "jsr:@std/yaml@0.224.3",
       "jsr:@std/yaml@^1.0.0-rc.1": "jsr:@std/yaml@1.0.0-rc.1",
+      "jsr:@zip-js/zip-js@2.7.45": "jsr:@zip-js/zip-js@2.7.45",
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@types/estree@1.0.5": "npm:@types/estree@1.0.5",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
@@ -192,6 +193,9 @@
       },
       "@std/yaml@1.0.0-rc.1": {
         "integrity": "ef57cfec54ce97e05a7659dd7925de5ef2b8d236064d1463b8bbcf0979e87aa7"
+      },
+      "@zip-js/zip-js@2.7.45": {
+        "integrity": "0eb37002a4c32397f144dee55fc8e46ee24300920f0a99adb66a931d0e423e55"
       }
     },
     "npm": {

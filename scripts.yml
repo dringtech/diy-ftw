@@ -1,0 +1,7 @@
+scripts:
+  get-fonts:
+    cmd: scripts/getFonts.ts
+    allow:
+      net: [api.fontsource.org, r2.fontsource.org, deno.land]
+      read: [.]
+      write: [./src/assets/fonts/]
