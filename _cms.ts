@@ -19,7 +19,7 @@ cms.collection('tools', 'tools:*.md', [
       "command-line-app",
       "programming-language",
       "library",
-      "search-engine",
+      "data-portal",
       "miscellaneous",
       "site-generator",
       "web-platform",
