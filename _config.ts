@@ -4,6 +4,7 @@ import esbuild from "lume/plugins/esbuild.ts";
 import metas from "lume/plugins/metas.ts";
 
 const site = lume({
+  src: "./src",
   location: new URL("https://diy-open-data.deno.dev/"),
 });
 
