@@ -1,5 +1,6 @@
 ---
 title: Datasette
-description: Tool to explore and publish data as an interactive website and API
+description: Data explorer and publishing tool
 homepage: https://datasette.io/
+type: explorer
 ---

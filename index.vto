@@ -13,8 +13,8 @@
   The tools in the catalogue are listed below:
 </p>
 
-<ul>
+{{ comp MasonryGrid }}
 {{ for tool of search.pages('tool', 'title') }}
-  <li><a href="{{ tool.homepage }}">{{ tool.title }}</a> - {{ tool.description }}</li>
+  {{ comp Block { tag: 'li' } }}{{ comp.ToolListing({ ...tool, comp }) }}{{ /comp }}
 {{ /for }}
-</ul>
+{{ /comp }}

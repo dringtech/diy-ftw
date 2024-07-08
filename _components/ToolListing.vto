@@ -1,0 +1,21 @@
+---
+css: |
+  .tool-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+---
+<h2>{{ title }}</h2>
+
+<p>{{ description }}</p>
+<ul class="tool-links">
+{{ if homepage }}<li><a href="{{ homepage }}">Homepage</a></li>{{ /if }}
+</ul>
+<p>
+{{ if type }}{{ comp.Lozenge({ label: type }) }}{{ else }}
+{{> console.warn(`No label for ${url}`) }}
+{{ /if }}
+</p>

@@ -1,0 +1,23 @@
+---
+css: |
+  .block {
+    border: 1px solid var(--text-muted);
+    padding: 1em;
+  }
+  .block * {
+    margin-block: 0;
+  }
+  .block * + * {
+    margin-block-start: 0.5em;
+  }
+  .block:hover {
+    color: var(--background-body);
+    background: var(--text-muted);
+  }
+  .block:hover a {
+    color: var(--text-bright);
+  }
+---
+<{{ tag || 'div'}} class="block">
+{{ content }}
+</{{ tag || 'div'}}>

@@ -1,5 +1,6 @@
 ---
 title: Airtable
-description: Cloud hosted data tables - low code / no code, user friendly
+description: Cloud-hosted data tables
 homepage: https://www.airtable.com/
+type: database
 ---
