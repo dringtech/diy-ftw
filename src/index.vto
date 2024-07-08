@@ -30,7 +30,7 @@ title: Welcome to DIY Open Data
 
 {{ for type of allTypes }}
   <section data-type="{{ type }}">
-  <h2>Category: {{ types[type] || type }}</h2>
+  <h2>{{ types[type] || type }}</h2>
 
   {{ comp MasonryGrid }}
     {{ for tool of search.pages(`tool type=${ type }`, 'title') }}
