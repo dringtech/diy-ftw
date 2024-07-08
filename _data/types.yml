@@ -4,4 +4,8 @@ data-portal: Data Portal
 database: Database
 desktop-app: Desktop App
 explorer: Explorer
+integration: Integration Platform
+library: Code Library
+orchestration: Orchestration
+programming-language: Programming Language
 site-generator: Site Generator

@@ -1,3 +1,4 @@
+import init from "https://deno.land/x/deno_dom@v0.1.47/build/deno-wasm/deno-wasm.js";
 import lumeCMS, { Fs } from "lume/cms/mod.ts";
 
 const cms = lumeCMS();
@@ -13,17 +14,18 @@ cms.collection("tools", "tools:*.md", [
     name: "type",
     type: "select",
     options: [
-      "database",
-      "web-app",
-      "desktop-app",
       "command-line-app",
-      "programming-language",
-      "library",
       "data-portal",
+      "database",
+      "desktop-app",
+      "integration",
+      "library",
       "miscellaneous",
+      "orchestration",
+      "programming-language",
       "site-generator",
+      "web-app",
       "web-platform",
-      "",
     ],
   },
   "content: markdown",
