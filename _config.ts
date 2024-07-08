@@ -4,7 +4,7 @@ import esbuild from "lume/plugins/esbuild.ts";
 import metas from "lume/plugins/metas.ts";
 
 const site = lume({
-  location: new URL('https://diy-ftw.deno.dev/'),
+  location: new URL("https://diy-open-data.deno.dev/"),
 });
 
 site.use(base_path());
