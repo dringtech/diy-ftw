@@ -4,8 +4,9 @@ title: Home
 <h1>DIY Open Data</h1>
 
 <p>
-  Welcome to the Data toolbox.
-  This is a collaborative list of tools that the Open Data community use when exploring, processing and visualising data.
+  Welcome to DIY Open Data.
+  This is a collaborative list of {{ search.pages("tool").length }} tools that the Open Data community use when exploring, processing and visualising data.
+  The focus of the list is tools that enable individual and small teams to explore, process, prototype and publish data.
 </p>
 
 <p>
@@ -13,9 +14,13 @@ title: Home
 </p>
 
 <h2>Filter</h2>
+
 <form id="type-filter" style="display: flex; flex-wrap: wrap;gap:0 1em;">
 {{ for idx, type of search.values('type') |> toSorted }}
-  <div><input id="type-filter-{{ type }}" type='checkbox' name="{{ type }}"><label for="type-filter-{{ type }}">{{ types[type] || type }}</label></div>
+  <div>
+    <input id="type-filter-{{ type }}" type='checkbox' name="{{ type }}">
+    <label for="type-filter-{{ type }}">{{ types[type] || type }} ({{ search.pages(`tool type=${ type }`).length }})</label>
+  </div>
 {{ /for }}
 </form>
 
